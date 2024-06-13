@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class Fruit{
+    public:
+    string name;
+    string color;
+    
+};
+
+int main()
+{
+    //Using dot operator
+    Fruit apple;
+    apple.name="Apple";
+    apple.color="Red";
+    cout<<apple.name<<endl;
+    cout<<apple.color;
+    
+    //Using new keyword & arrow Operator
+    Fruit *banana = new Fruit();
+    banana->name= "Banana";
+    banana->color="Yellow";
+    cout<<banana->name<<endl;
+    cout<<banana->color;
+    
+    return 0;
+}
